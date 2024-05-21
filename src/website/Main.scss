@@ -1,0 +1,437 @@
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+// Outer wrapper to provide white background
+.outer-wrapper {
+  background-image: url('../img/HEALTH.png'); // White background
+  width: 100%; // Full width
+  height: 100vh; // Full viewport height
+  display: flex; // Use flexbox for centering
+  align-items: center; // Center vertically
+  justify-content: center; // Center horizontally
+  padding: 2rem; // Less padding than before to increase the size of the header
+}
+
+// The header section with light gray background and a bit larger than before
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 650vh; // 80% of the outer wrapper's width
+  height: 89vh;
+  background-image: url('../img/background.png'); // Light gray background
+  color: #333; // Dark text color for contrast
+  border-radius: 40px; // Significantly larger border radius for rounded corners
+  padding: 3rem; // Padding inside the header
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Shadow for depth
+  position: relative; // Needed for absolute positioning of the children
+  overflow: hidden; // Ensures
+  
+
+  h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+
+  img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  // Shape overlay
+  &::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 200px;
+    height: 200px; // Make it a circle
+    background-image: url('../img/HEALTH.png');// Example color for the shape
+    border-radius: 50%; // Fully rounded to create a circle
+    z-index: -1; // Placed behind the content
+  }
+}
+
+.idea{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%; // 80% of the outer wrapper's width
+  height: 95vh;
+  background-image: url('../img/background.png');
+  color: #333; // Dark text color for contrast
+  border-radius: 40px; // Significantly larger border radius for rounded corners
+  padding: 3rem; // Padding inside the header
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Shadow for depth
+  position: relative; // Needed for absolute positioning of the children
+  overflow: hidden; // Ensures
+
+  h2{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+  }
+  ul{
+    font-size:1.5rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+  img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  // Target the first image for unique styling
+  img:nth-of-type(1) {
+    border-radius: 50%; // Make the first image round
+    top: 75%; // Adjust the position specifically for the first image
+    right: 35%; // Adjust the position specifically for the first image
+  }
+
+  // Target the second image for unique styling
+  img:nth-of-type(2) {
+    border-radius: 50%; // Different border-radius for the second image
+    top: 40%; // Adjust the position specifically for the second image
+    right: 35%; // Adjust the position specifically for the second image
+  }
+  img:nth-of-type(3) {
+    border-radius: 0%; // Different border-radius for the second image
+    top: 60%; // Adjust the position specifically for the second image
+    right: 5%; // Adjust the position specifically for the second image
+    width: 500px;
+    height:500px
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px; // Make it a circle
+    background-color: rgb(241, 238, 238); // Example color for the shape
+    border-radius: 50%; // Fully rounded to create a circle
+    z-index: -1; // Placed behind the content
+  }
+
+}
+
+.header2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%; // 80% of the outer wrapper's width
+  height: 95vh;
+  background-image: url('../img/background.png');
+  color: #333; // Dark text color for contrast
+  border-radius: 40px; // Significantly larger border radius for rounded corners
+  padding: 3rem; // Padding inside the header
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Shadow for depth
+  position: relative; // Needed for absolute positioning of the children
+  overflow: hidden; // Ensures
+
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    position: relative; // Needed to use the 'right' property
+    left: 10%; // Moves the h1 element to the left by 5% of its containing block
+  }
+  
+  p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    max-width: 700px;
+    position: relative; // Needed to use the 'right' property
+    left: 10%; //
+    top:-7%;
+  }
+  img {
+    max-width: 800px;
+    height: 800px;
+    border-radius: 8px;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  img {
+    border-radius: 10%; // Make the first image round
+    top: 50%; // Adjust the position specifically for the first image
+    right: 1%; // Adjust the position specifically for the first image
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px; // Make it a circle
+    background-color: rgb(241, 238, 238); // Example color for the shape
+    border-radius: 50%; // Fully rounded to create a circle
+    z-index: -1; // Placed behind the content
+  }
+}
+.header3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%; // 80% of the outer wrapper's width
+  height: 95vh;
+  background-image: url('../img/background.png');
+  color: #333; // Dark text color for contrast
+  border-radius: 40px; // Significantly larger border radius for rounded corners
+  padding: 3rem; // Padding inside the header
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Shadow for depth
+  position: relative; // Needed for absolute positioning of the children
+  overflow: hidden; // Ensures
+
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    position: relative; // Needed to use the 'right' property
+    top:-0%;
+    left:10%; // Moves the h1 element to the left by 5% of its containing block
+  }
+  
+  p:nth-of-type(1){
+    font-size: 1.76rem;
+    margin-bottom: 1rem;
+    max-width: 700px;
+    position: relative; // Needed to use the 'right' property
+    left: 10%; //
+    top:-5%;
+  }
+  p:nth-of-type(2){
+    font-weight: bold;
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    max-width: 300px;
+    position: relative; // Needed to use the 'right' property
+    left: 10%; //
+    top:-0%;
+  }
+  p:nth-of-type(3){
+    font-weight: bold;
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    max-width:300px;
+    position: relative; // Needed to use the 'right' property
+    left: 80%; //
+    top:-23%;
+  }
+  img {
+    max-width: 800px;
+    height: 800px;
+    border-radius: 8px;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  img {
+    border-radius: 10%; // Make the first image round
+    top: 50%; // Adjust the position specifically for the first image
+    right: 1%; // Adjust the position specifically for the first image
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px; // Make it a circle
+    background-color: rgb(241, 238, 238); // Example color for the shape
+    border-radius: 50%; // Fully rounded to create a circle
+    z-index: -1; // Placed behind the content
+  }
+}
+
+.header4{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%; // 80% of the outer wrapper's width
+  height: 95vh;
+  background-image: url('../img/background.png');
+  color: #333; // Dark text color for contrast
+  border-radius: 40px; // Significantly larger border radius for rounded corners
+  padding: 3rem; // Padding inside the header
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Shadow for depth
+  position: relative; // Needed for absolute positioning of the children
+  overflow: hidden; // Ensures
+
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    position: relative; // Needed to use the 'right' property
+    top:8%;
+    left:10%; // Moves the h1 element to the left by 5% of its containing block
+  }
+  
+  p:nth-of-type(1){
+    font-size: 1.76rem;
+    margin-bottom: 1rem;
+    max-width: 700px;
+    position: relative; // Needed to use the 'right' property
+    left: 10%; //
+    top:5%;
+  }
+  p:nth-of-type(2){
+    font-weight: bold;
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    max-width: 300px;
+    position: relative; // Needed to use the 'right' property
+    left: 10%; //
+    top:8%;
+  }
+  p:nth-of-type(3){
+    font-weight: bold;
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    max-width:300px;
+    position: relative; // Needed to use the 'right' property
+    left: 80%; //
+    top:-14.4%;
+  }
+  img {
+    max-width: 600px;
+    height: 800px;
+    border-radius: 8px;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  img {
+    border-radius: 10%; // Make the first image round
+    top: 50%; // Adjust the position specifically for the first image
+    right: 1%; // Adjust the position specifically for the first image
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px; // Make it a circle
+    background-color: rgb(241, 238, 238); // Example color for the shape
+    border-radius: 50%; // Fully rounded to create a circle
+    z-index: -1; // Placed behind the content
+  }
+}
+.search-patients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  .search-input {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    margin-top: 90px;
+
+    input {
+      flex-grow: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px 0 0 5px; // Rounded left corners
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #0056b3;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0; // Rounded right corners
+
+      &:hover {
+        background-color: #004494;
+      }
+
+      &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .results-list {
+    list-style: none;
+    width: 800px;
+    max-width: 800px;
+       
+    li {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      padding: 10px;
+      margin-top: 50px;
+      border-radius: 5px;
+
+      button {
+        margin-left: 70px;
+        padding: 5px 40px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: #218838;
+        }
+      }
+    }
+  }
+
+  .error-message {
+    color: #dc3545;
+    margin-top: 10px;
+  }
+}

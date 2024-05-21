@@ -1,0 +1,126 @@
+.slidemenu {
+  font-family: arial, sans-serif;
+  max-width: 600px;
+  margin: 50px auto;
+  overflow: hidden;
+
+  .clear {
+    clear: both;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    width: 25%;
+    text-align: center;
+    float: left;
+    color: #333;
+    opacity: 0.2;
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: #666;
+    }
+
+    span {
+      display: block;
+      padding: 10px;
+      a {
+        color: #333; // Default color for the links
+        text-decoration: none; // Removes underline from links
+
+        &:hover {
+          color: #666; // Color on hover
+        }
+      }
+    }
+
+    .icon {
+      font-size: 20px;
+      border: solid 2px #333;
+      text-align: center;
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  .slider {
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    .bar {
+      width: 25%;
+      height: 5px;
+      background: #333;
+      border-radius: 5px;
+      transition: all 500ms ease-in-out;
+    }
+  }
+
+  input:checked + label {
+    opacity: 1;
+  }
+
+  #slide-item-1:checked ~ .slider .bar { margin-left: 0; }
+  #slide-item-2:checked ~ .slider .bar { margin-left: 25%; }
+  #slide-item-3:checked ~ .slider .bar { margin-left: 50%; }
+  #slide-item-4:checked ~ .slider .bar { margin-left: 75%; }
+}
+
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .form-group {
+      margin-bottom: 15px;
+  }
+
+  .btn {
+      margin-top: 20px;
+  }
+}
+// PatientProfileDisplay.scss
+// PatientProfileDisplay.scss
+.patient-profile-display {
+  display: flex;
+  justify-content: space-between;
+
+  .profile-section, .overview-section {
+    flex: 1;
+    padding: 100px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666;
+    }
+  }
+
+  // Adjust spacing between the sections if needed
+  .profile-section {
+    margin-right: 20px;
+  }
+}
