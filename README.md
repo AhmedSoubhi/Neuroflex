@@ -35,6 +35,11 @@ Testing and Validation: The system undergoes rigorous testing to ensure function
 
 Conclusion
 The NeuroFlex-Glove project represents a significant advancement in rehabilitation technology, offering a state-of-the-art solution to assist in hand recovery. By integrating real-time data processing, interactive feedback, and personalized rehabilitation plans, it aims to improve the overall effectiveness and accessibility of hand therapy.
+![image](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/ffc7ee22-6567-4f74-934e-3183ff89effe)
+![image](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/f6890035-e10f-49c7-9beb-d085ef4e3239)
+![image](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/ee38c20c-e477-4273-b7a4-1c1520210096)
+![image](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/6a4d8264-d4a8-471a-aa9e-f5fd32fe1821)
+![image](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/e4592aca-880c-432a-83a3-68a03298991f)
 
 ![WhatsApp Image 2024-05-16 at 20 12 39_d87ca615](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/03b8f5bc-a0a2-481e-81a2-df4470df17c5)
 ![WhatsApp Image 2024-05-16 at 20 12 40_cf5938e5](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/9a3b4392-5c8f-41a2-85f8-67881bc21f4a)
