@@ -7,14 +7,14 @@ import './Style.scss'; // Import custom SCSS for additional styling
 
 // Sensor dashboard specific Firebase configuration
 const sensorFirebaseConfig = {
-  apiKey: "AIzaSyDrIHxdEAJsTA6JDUIWlFEoLVftC9hK9C8",
-  authDomain: "smart-db586.firebaseapp.com",
-  databaseURL: "https://smart-db586-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "smart-db586",
-  storageBucket: "smart-db586.appspot.com",
-  messagingSenderId: "252532913300",
-  appId: "1:252532913300:web:b60199012f66bce4823081",
-  measurementId: "G-S1Y9QL8Z1P"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 
 const sensorApp = initializeApp(sensorFirebaseConfig, "SensorDashboard");
