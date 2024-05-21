@@ -1,4 +1,4 @@
-![WhatsApp Image 2024-05-16 at 20 12 39_04678bdc](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/c4fef733-55f2-463b-ad48-1b5433464fdf)The NeuroFlex-Glove project is an IoT-based smart glove designed for hand rehabilitation. It combines embedded sensors and actuators with a real-time monitoring system to assist patients in restoring hand function. This innovative approach aims to enhance rehabilitation efficiency and patient engagement by providing personalized exercises and interactive feedback.
+The NeuroFlex-Glove project is an IoT-based smart glove designed for hand rehabilitation. It combines embedded sensors and actuators with a real-time monitoring system to assist patients in restoring hand function. This innovative approach aims to enhance rehabilitation efficiency and patient engagement by providing personalized exercises and interactive feedback.
 
 Key Components
 ESP32 Microcontroller: This serves as the central processing unit for the glove, handling data from sensors and controlling actuators. It features built-in Wi-Fi and Bluetooth for seamless data transmission to a web server.
@@ -36,5 +36,8 @@ Testing and Validation: The system undergoes rigorous testing to ensure function
 
 Conclusion
 The NeuroFlex-Glove project represents a significant advancement in rehabilitation technology, offering a state-of-the-art solution to assist in hand recovery. By integrating real-time data processing, interactive feedback, and personalized rehabilitation plans, it aims to improve the overall effectiveness and accessibility of hand therapy.
-![WhatsApp Image 2024-05-16 at 20 12 39_04678bdc](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/10aab1e0-0b2a-41a0-949e-b566808c0871)
+
+![WhatsApp Image 2024-05-16 at 20 12 39_d87ca615](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/03b8f5bc-a0a2-481e-81a2-df4470df17c5)
+![WhatsApp Image 2024-05-16 at 20 12 40_cf5938e5](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/9a3b4392-5c8f-41a2-85f8-67881bc21f4a)
+![WhatsApp Image 2024-05-14 at 22 52 19_542cef89](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/7b93691f-556b-44d8-94c1-28df95b5cd1e)
 
