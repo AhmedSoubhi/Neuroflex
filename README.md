@@ -16,6 +16,10 @@ Web Application: Developed using React JS, Node.js, and PostgreSQL, this web app
 System Overview
 Hardware Integration: The smart glove integrates multiple sensors (flex sensors, FSRs) with the ESP32 microcontroller. The ESP32 processes sensor data and controls the actuators, which aid in finger movements.
 
+
+https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/1d671d97-071d-4e2c-8db2-d284c74f6df4
+
+
 Real-Time Data Processing: Sensor data is transmitted to a Firebase Realtime Database via the ESP32’s Wi-Fi module. This data is then visualized in real-time on the web application, providing immediate feedback to users.
 
 Software Architecture:
@@ -40,4 +44,6 @@ The NeuroFlex-Glove project represents a significant advancement in rehabilitati
 ![WhatsApp Image 2024-05-16 at 20 12 39_d87ca615](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/03b8f5bc-a0a2-481e-81a2-df4470df17c5)
 ![WhatsApp Image 2024-05-16 at 20 12 40_cf5938e5](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/9a3b4392-5c8f-41a2-85f8-67881bc21f4a)
 ![WhatsApp Image 2024-05-14 at 22 52 19_542cef89](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/7b93691f-556b-44d8-94c1-28df95b5cd1e)
+![WhatsApp Image 2024-05-13 at 21 03 13_7811c8b6](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/d2f7826a-ad0f-4b48-9c2f-b8ec462bdfc8)
+![WhatsApp Image 2024-05-13 at 21 03 13_d7316382](https://github.com/AhmedSoubhi/Neuroflex/assets/170421629/d7028eca-c413-444d-a949-8d6fbfa52563)
 
