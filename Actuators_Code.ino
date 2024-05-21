@@ -9,8 +9,8 @@
 
 
 // Firebase project API Key and database URL
-#define API_KEY "AIzaSyDrIHxdEAJsTA6JDUIWlFEoLVftC9hK9C8"
-#define DATABASE_URL "https://smart-db586-default-rtdb.europe-west1.firebasedatabase.app/"
+#define API_KEY ""
+#define DATABASE_URL ""
 
 FirebaseData fbdo;
 FirebaseAuth auth;
